@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA33B79C2A933F15005C6D87 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B79B2A933F15005C6D87 /* CircleView.swift */; };
+		EA33B79E2A9341CB005C6D87 /* Holeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B79D2A9341CB005C6D87 /* Holeview.swift */; };
+		EA33B7A02A9346CD005C6D87 /* Timerview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B79F2A9346CD005C6D87 /* Timerview.swift */; };
+		EA33B7A32A937E83005C6D87 /* OraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33B7A22A937E82005C6D87 /* OraView.swift */; };
 		EA3C205B286A40150003DD84 /* clockviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C205A286A40150003DD84 /* clockviewApp.swift */; };
 		EA3C205D286A40150003DD84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C205C286A40150003DD84 /* ContentView.swift */; };
 		EA3C205F286A40160003DD84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3C205E286A40160003DD84 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA33B79B2A933F15005C6D87 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		EA33B79D2A9341CB005C6D87 /* Holeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holeview.swift; sourceTree = "<group>"; };
+		EA33B79F2A9346CD005C6D87 /* Timerview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timerview.swift; sourceTree = "<group>"; };
+		EA33B7A22A937E82005C6D87 /* OraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OraView.swift; sourceTree = "<group>"; };
 		EA3C2057286A40150003DD84 /* clockview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clockview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3C205A286A40150003DD84 /* clockviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clockviewApp.swift; sourceTree = "<group>"; };
 		EA3C205C286A40150003DD84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA33B7A12A935C49005C6D87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA33B79F2A9346CD005C6D87 /* Timerview.swift */,
+				EA33B79B2A933F15005C6D87 /* CircleView.swift */,
+				EA33B79D2A9341CB005C6D87 /* Holeview.swift */,
+				EA33B7A22A937E82005C6D87 /* OraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EA3C204E286A40150003DD84 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +72,7 @@
 			children = (
 				EA3C205A286A40150003DD84 /* clockviewApp.swift */,
 				EA3C205C286A40150003DD84 /* ContentView.swift */,
+				EA33B7A12A935C49005C6D87 /* Views */,
 				EA3C205E286A40160003DD84 /* Assets.xcassets */,
 				EA3C2060286A40160003DD84 /* Preview Content */,
 			);
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA33B79E2A9341CB005C6D87 /* Holeview.swift in Sources */,
+				EA33B79C2A933F15005C6D87 /* CircleView.swift in Sources */,
+				EA33B7A02A9346CD005C6D87 /* Timerview.swift in Sources */,
 				EA3C205D286A40150003DD84 /* ContentView.swift in Sources */,
 				EA3C205B286A40150003DD84 /* clockviewApp.swift in Sources */,
+				EA33B7A32A937E83005C6D87 /* OraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +288,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"clockview/Preview Content\"";
-				DEVELOPMENT_TEAM = 2MTQ59HBN8;
+				DEVELOPMENT_TEAM = KS4D2HGV5Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = NClock;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +320,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"clockview/Preview Content\"";
-				DEVELOPMENT_TEAM = 2MTQ59HBN8;
+				DEVELOPMENT_TEAM = KS4D2HGV5Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = NClock;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
